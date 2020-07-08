@@ -24,7 +24,7 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles status
 dotfiles add .vimrc
 dotfiles commit -m "Add vimrc"
-dotfiles remote add origin https://www.github.com/username/repo.git
+dotfiles remote add origin git@github.com:lexjacobs/dotfiles.git
 dotfiles push origin master
 ```
 
