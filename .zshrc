@@ -105,4 +105,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias ide="source $HOME/bin/.ide"
 alias cl="clear"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
