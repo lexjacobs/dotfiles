@@ -3,7 +3,6 @@
 export PATH=/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
-# export ZSH="/Users/alex/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -23,7 +22,7 @@ ZSH_THEME="michelebologna"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+ HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -44,7 +43,7 @@ ZSH_THEME="michelebologna"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -103,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias ide="source $HOME/bin/.ide"
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias ide="source $HOME/bin/tmux/ide.sh"
+
