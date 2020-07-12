@@ -76,6 +76,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+HISTSIZE=1000000
+HISTFILESIZE=-1
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -104,5 +107,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias ide="source $HOME/bin/tmux/ide.sh"
+alias ide="source $HOME/bin/tmx/ide.sh"
 
