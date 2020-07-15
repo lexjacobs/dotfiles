@@ -107,5 +107,6 @@ HISTFILESIZE=-1
 
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias dotadd=". ~/bin/quick_commit"
 alias ide="source $HOME/bin/tmx/ide"
 
