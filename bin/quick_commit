@@ -1,0 +1,4 @@
+#!/bin/zsh
+source ~/.zshrc
+dot commit -am 'make quick commit without much description'
+dot push origin master
