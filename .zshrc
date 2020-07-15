@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(autojump dash git magic-enter web-search z zsh-autosuggestions zsh_reload)
+plugins=(autojump dash git git-open magic-enter web-search z zsh-autosuggestions zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,5 +107,5 @@ HISTFILESIZE=-1
 
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias ide="source $HOME/bin/tmx/ide.sh"
+alias ide="source $HOME/bin/tmx/ide"
 
