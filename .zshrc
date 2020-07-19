@@ -110,3 +110,6 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias dotadd=". ~/bin/quick_commit"
 alias ide="source $HOME/bin/tmx/ide"
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
