@@ -70,7 +70,13 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(autojump dash git git-open magic-enter web-search z zsh-autosuggestions zsh_reload)
+# https://github.com/zsh-users/antigen/wiki/Commands
+# brew install antigen
+source /usr/local/share/antigen/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-autosuggestions
+antigen apply
+plugins=(autojump dash git magic-enter web-search z zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
