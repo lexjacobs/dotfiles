@@ -1,3 +1,9 @@
+# quick test to see if antigen is installed
+if [[ ! -a ~/.antigen/init.zsh ]]; then
+  echo ">>> you need to brew install antigen"
+fi
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
@@ -73,7 +79,8 @@ ENABLE_CORRECTION="true"
 # https://github.com/zsh-users/antigen/wiki/Commands
 # brew install antigen
 source /usr/local/share/antigen/antigen.zsh
-antigen use oh-my-zsh
+# antigen use oh-my-zsh
+antigen bundle paulirish/git-open
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 plugins=(autojump dash git magic-enter web-search z zsh_reload)
