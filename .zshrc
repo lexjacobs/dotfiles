@@ -1,9 +1,3 @@
-# quick test to see if antigen is installed
-if [[ ! -a ~/.antigen/init.zsh ]]; then
-  echo ">>> you need to brew install antigen"
-fi
-
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
@@ -76,8 +70,11 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
+# quick test to see if antigen is installed
+if [[ ! -a ~/.antigen/init.zsh ]]; then
+  echo ">>> you need to brew install antigen"
+fi
 # https://github.com/zsh-users/antigen/wiki/Commands
-# brew install antigen
 source /usr/local/share/antigen/antigen.zsh
 # antigen use oh-my-zsh
 antigen bundle paulirish/git-open
