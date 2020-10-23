@@ -85,6 +85,19 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 plugins=(autojump dash git magic-enter web-search z zsh_reload)
 
+### Fix slowness of pastes with zsh-syntax-highlighting.zsh
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+### Fix slowness of pastes
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -122,6 +135,7 @@ alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias dotadd=". ~/bin/quick_commit"
 alias ide="source $HOME/bin/tmx/ide"
+alias planckadd="source $HOME/bin/qmk_planck.sh"
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
