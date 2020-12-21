@@ -134,6 +134,7 @@ HISTFILESIZE=-1
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias dotadd=". ~/bin/quick_commit"
+alias gs="git status"
 alias ide="source $HOME/bin/tmx/ide"
 alias planckadd="source $HOME/bin/qmk_planck.sh"
 alias npml="npm list --depth=0 2>/dev/null"
