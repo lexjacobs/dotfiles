@@ -131,6 +131,8 @@ HISTFILESIZE=-1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+source $HOME/.shellexports.sh
+
 alias cl="clear"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias dotadd=". ~/bin/quick_commit"
