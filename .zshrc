@@ -139,6 +139,7 @@ alias ide="source $HOME/bin/tmx/ide"
 alias planckadd="source $HOME/bin/qmk_planck.sh"
 alias npml="npm list --depth=0 2>/dev/null"
 alias npmg="npm list -g --depth=0 2>/dev/null"
+alias picker="npm run --prefix ~/Dropbox/_rpt/flower-picker/ start"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
